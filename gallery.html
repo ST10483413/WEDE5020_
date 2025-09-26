@@ -1,47 +1,112 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> Gallery  page</title>
+    
+    <title>Gallery - Lifestyle Barbershop</title>
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
- <body>
+<body>
    <header>
       <nav>
-          <div><hr>
-              <img src="images/logo.png" style="width: 50px;height: 60px;">
-
+          <a href="#" class="logo">
+              <img src="images/logo.png" alt="Lifestyle Barbershop Logo">
+              <span>LIFESTYLE-BARBERSHOP</span>
+          </a>
+          <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-toggle">
+              <i class="fas fa-bars"></i>
           </div>
-              <hr> <center>
-                <h1>
-               <a href="home.html">Home Page</a>
-               <a href="services.html">Services</a>
-               <a href="about.html">About us</a>
-               <a href="gallery.html">Gallery </a>
-               <a href="contact.html">Contact </a>
-               </h1> 
-               </center><hr>
       </nav>
    </header>
 
    <main>
-       <h1>Gallery</h1>
-       <p>Welcome to our gallery. Check out some of our featured images below:</p>
-        <div class="gallery">
-        <video width="100%" height="600" controls loop autoplay muted>
-        <source src="images/vid2.mp4" type="video/mp4 ">
-      </video>
-      <video width="100%" height="600" controls loop autoplay muted>
-        <source src="images/vid3.mp4" type="video/mp4 ">
-      </video>
-      
-            <img src="images/pic2.jpg" alt="Gallery Image 1" style="width:250px; height:200px;"><br>
-            <img src="images/pic2.2.jpg" alt="Gallery Image 2" style="width:250px; height:200px;"><br>
-            <img src="images/pic1.jpg" alt="Gallery Image 3" style="width:250px; height:200px;"><br>
-        </div>
+     <h1>Gallery</h1>
+     <p>Welcome to our gallery. Check out some of our featured images below:</p>
 
-   </main><hr>
-<footer>
-    <p>&copy;ST10483413</p>
-</footer>
- </body>
+     <div class="gallery-info">
+         <h2>Our Work Showcase</h2>
+         <p>Discover our premium grooming artistry through this curated collection of our finest work. Each cut represents our commitment to excellence and attention to detail.</p>
+     </div>
+
+     <div class="stats-grid">
+         <div class="stat-card">
+             <span class="stat-number">500+</span>
+             <span class="stat-label">Happy Clients</span>
+         </div>
+         <div class="stat-card">
+             <span class="stat-number">5</span>
+             <span class="stat-label">Years Experience</span>
+         </div>
+         <div class="stat-card">
+             <span class="stat-number">1000+</span>
+             <span class="stat-label">Cuts Completed</span>
+         </div>
+     </div>
+
+     <div class="gallery">
+         <div class="gallery-item">
+             <video controls loop autoplay muted>
+                 <source src="images/vid2.mp4" type="video/mp4">
+             </video>
+             <div class="gallery-overlay">
+                 <div class="gallery-text">
+                     <h3>Master Techniques</h3>
+                     <p>Professional cutting techniques in action</p>
+                 </div>
+             </div>
+         </div>
+         <div class="gallery-item">
+             <video controls loop autoplay muted>
+                 <source src="images/vid3.mp4" type="video/mp4">
+             </video>
+             <div class="gallery-overlay">
+                 <div class="gallery-text">
+                     <h3>Styling Process</h3>
+                     <p>Complete transformation showcase</p>
+                 </div>
+             </div>
+         </div>
+         <div class="gallery-item">
+             <img src="images/pic2.jpg" alt="Classic Haircut">
+             <div class="gallery-overlay">
+                 <div class="gallery-text">
+                     <h3>Classic Cut</h3>
+                     <p>Timeless style with modern precision</p>
+                 </div>
+             </div>
+         </div>
+         <div class="gallery-item">
+             <img src="images/pic2.2.jpg" alt="Beard Styling">
+             <div class="gallery-overlay">
+                 <div class="gallery-text">
+                     <h3>Beard Styling</h3>
+                     <p>Expert grooming and shaping</p>
+                 </div>
+             </div>
+         </div>
+         <div class="gallery-item">
+             <img src="images/pic1.jpg" alt="Premium Service">
+             <div class="gallery-overlay">
+                 <div class="gallery-text">
+                     <h3>Premium Service</h3>
+                     <p>Luxury barbering experience</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+   </main>
+
+   <footer>
+        <p>&copy; 2023 Lifestyle Barbershop. All rights reserved. | ST10483413</p>
+   </footer>
+
+   <!-- Font Awesome for menu icon -->
+   
+</body>
 </html>

@@ -1,34 +1,107 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> Contact page</title>
+   
+    <title>Contact - Lifestyle- BARBERSHOP</title>
+    <link rel="stylesheet" href="css/contact.css">
+
 </head>
- <body>
+<body>
    <header>
       <nav>
-          <div><hr>
+          <div>
              <img src="images/logo.png" style="width: 50px;height: 60px;">
+             <span class="shop-name">LIFESTYLE-BARBERSHOP</span>
           </div>
-              <hr> <center>
-                <h1>
-               <a href="home.html">Home Page</a>
+          <center>
+            <h1>
+               <a href="home.html">Home</a>
                <a href="services.html">Services</a>
-               <a href="about.html">About us</a>
-               <a href="gallery.html">Gallery </a>
-               <a href="contact.html">Contact </a>
-               </h1> 
-               </center><hr>
+               <a href="about.html">About</a>
+               <a href="gallery.html">Gallery</a>
+               <a href="contact.html">Contact</a>
+            </h1> 
+          </center>
       </nav>
    </header>
+   
    <main>
-    <b><p1>Contact Us</p1></b>
- <p2>We'd love to hear from you! Whether you have questions about our services</p2>
- <p3>or want to book an appointment, feel free to reach out.</p3>
- <p>📍 196 shiplake road Protea Glan | 📞 0824642178 | Open Mon-Sat 9AM-7PM</p>
-   </main><hr>
-<footer>
-    <p>&copy;ST10483413</p>
-</footer>
- </body>
+        <p1>Contact Us</p1>
+        <p2>We'd love to hear from you! Whether you have questions about our services</p2>
+        <p3>or want to book an appointment, feel free to reach out.</p3>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-text">
+                        <h3>Address</h3>
+                        <p>196 Shiplake Road, Protea Glen</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-text">
+                        <h3>Phone</h3>
+                        <p>082 464 2178</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-text">
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Saturday: 9AM - 7PM</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-text">
+                        <h3>Email</h3>
+                        <p>info@lifestylebarbershop.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service">
+                            <option value="haircut">Haircut</option>
+                            <option value="beard-trim">Beard Trim</option>
+                            <option value="full-grooming">Full Grooming</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message</label>
+                        <textarea id="message" placeholder="Any special requests or notes..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <p>📍 196 Shiplake Road, Protea Glen | Open Mon-Sat 9AM-7PM</p>
+            </div>
+        </div>
+   </main>
+   
+   <footer>
+        <p>&copy; 2023 Lifestyle Barbershop. All rights reserved. | ST10483413</p>
+   </footer>
+</body>
 </html>

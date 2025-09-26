@@ -1,39 +1,103 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title> Services page</title>
+   
+    <title>Services - LIFESTYLE-BARBERSHOP</title>
+    <link rel="stylesheet" href="css/services.css">
 </head>
- <body>
+<body>
    <header>
       <nav>
-          <div><hr>
-              <img src="images/logo.png" style="width: 50px;height: 60px;">
-             <hr>
-        </div>
-              <hr> <center>
-                <h1>
-               <a href="home.html">Home Page</a>
-               <a href="services.html">Services</a>
-               <a href="about.html">About us</a>
-               <a href="gallery.html">Gallery </a>
-               <a href="contact.html">Contact </a>
-               </h1> 
-               </center><hr>
+          <div class="nav-container">
+               <div class="logo-container">
+                   <img src="images/logo.png" alt="Lifestyle Barber Logo">
+                   <span class="brand-name">LIFESTYLE-BARBERSHOP</span>
+               </div>
+               <div class="nav-links">
+                   <a href="home.html">Home Page</a>
+                   <a href="services.html" class="active">Services</a>
+                   <a href="about.html">About us</a>
+                   <a href="gallery.html">Gallery</a>
+                   <a href="contact.html">Contact</a>
+               </div>
+          </div>
       </nav>
    </header>
+   
    <main>
-<h1> We offer the following services</h1>
-<ul>
-    <li>Classic Haircuts: Precision cuts tailored to your style and preferences.</li>
-    <li>Beard Grooming: Expert beard trims and shaping to keep you looking sharp.</li>
-    <li>Razor Shaves: Traditional straight razor shaves for a close, comfortable finish.</li>
-    <li>Hair Styling: Modern and classic styles to suit any occasion.</li>
-    <li>Children's Cuts: Friendly and professional haircuts for kids of all ages.</li>
-    <li>Senior Discounts: Special rates for our senior clients.</li>
-   </main><hr>
-<footer>
-    <p>&copy;ST10483413</p>
-</footer>
- </body>
+        <section class="hero">
+            <h1>Our Services</h1>
+        </section>
+        
+        <section class="services">
+            <div class="services-container">
+                <div class="service-card">
+                    <h3><span class="service-icon">✂️</span> Classic Haircuts</h3>
+                    <p>Precision cuts tailored to your style and preferences. Our barbers are experts in both modern and traditional techniques.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="service-icon">🧔</span> Beard Grooming</h3>
+                    <p>Expert beard trims and shaping to keep you looking sharp. We use premium products for the best results.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="service-icon">🪒</span> Razor Shaves</h3>
+                    <p>Traditional straight razor shaves for a close, comfortable finish. Experience the classic barber shop treatment.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="service-icon">💈</span> Hair Styling</h3>
+                    <p>Modern and classic styles to suit any occasion. From everyday looks to special events.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="service-icon">👦</span> Children's Cuts</h3>
+                    <p>Friendly and professional haircuts for kids of all ages. We make haircuts a fun experience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="service-icon">👴</span> Senior Discounts</h3>
+                    <p>Special rates for our senior clients. We value our long-term customers and show our appreciation.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="pricing">
+            <h2>Service Pricing</h2>
+            <div class="pricing-table">
+                <div class="pricing-row">
+                    <span class="service-name">Classic Haircut</span>
+                    <span class="service-price">R150</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="service-name">Beard Trim & Shape</span>
+                    <span class="service-price">R80</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="service-name">Straight Razor Shave</span>
+                    <span class="service-price">R120</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="service-name">Haircut & Beard Combo</span>
+                    <span class="service-price">R200</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="service-name">Children's Haircut (under 12)</span>
+                    <span class="service-price">R100</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="service-name">Senior Citizen Haircut</span>
+                    <span class="service-price">R120</span>
+                </div>
+            </div>
+        </section>
+   </main>
+   
+   <footer>
+        <div class="container">
+            <p>&copy; ST10483413</p>
+        </div>
+   </footer>
+</body>
 </html>
