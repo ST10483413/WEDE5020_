@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lifestylebarbershop.com/sitemap.xml
+
+# Disallow crawling of admin areas
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of CSS and JS files
+Allow: /css/
+Allow: /JavaScript/
+Allow: /images/

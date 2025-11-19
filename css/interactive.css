@@ -1,0 +1,353 @@
+/* Interactive Features CSS */
+
+/* Price Calculator */
+.price-calculator {
+    background: rgba(201, 169, 110, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border: 1px solid var(--secondary);
+}
+
+.price-calculator h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.price-calculator select,
+.price-calculator input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+    text-align: center;
+    padding: 1rem;
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 5px;
+}
+
+/* Chat Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1500;
+}
+
+.chat-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--secondary);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.chat-box {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background: var(--primary);
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+.chat-box.active {
+    display: flex;
+}
+
+.chat-header {
+    background: var(--secondary);
+    color: var(--dark);
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.message.bot {
+    background: rgba(201, 169, 110, 0.2);
+    color: var(--light);
+}
+
+.chat-input {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid var(--secondary);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--light);
+    border-radius: 3px;
+}
+
+.chat-input button {
+    background: var(--secondary);
+    color: var(--dark);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Hide old chat widget */
+.chat-widget {
+    display: none;
+}
+
+/* Time Slots */
+.time-slots {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(201, 169, 110, 0.1);
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+}
+
+.time-slots h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+}
+
+.slot {
+    padding: 0.8rem;
+    border: 1px solid var(--secondary);
+    background: transparent;
+    color: var(--light);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slot.available:hover {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+.slot.selected {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+.slot.booked {
+    background: rgba(255, 0, 0, 0.3);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Service Card Animations */
+.service-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Parallax Effect */
+.hero, .gallery-info {
+    transition: transform 0.1s ease-out;
+}
+
+/* Functional Chatbot */
+.functional-chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
+}
+
+.functional-chat-widget .chat-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--secondary);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.functional-chat-widget .chat-box {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 320px;
+    height: 450px;
+    background: var(--primary);
+    border: 2px solid var(--secondary);
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.functional-chat-widget .chat-box.active {
+    display: flex;
+}
+
+.functional-chat-widget .chat-header {
+    background: var(--secondary);
+    color: var(--dark);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 13px 13px 0 0;
+}
+
+.chat-close {
+    background: none;
+    border: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.functional-chat-widget .chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background: rgba(26, 26, 26, 0.95);
+}
+
+.functional-chat-widget .message {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.functional-chat-widget .message.bot {
+    background: rgba(201, 169, 110, 0.2);
+    color: var(--light);
+    align-self: flex-start;
+}
+
+.functional-chat-widget .message.user {
+    background: var(--secondary);
+    color: var(--dark);
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.functional-chat-widget .chat-input {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid var(--secondary);
+    background: var(--primary);
+}
+
+.functional-chat-widget .chat-input input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid var(--secondary);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--light);
+    border-radius: 5px;
+}
+
+.functional-chat-widget .send-btn {
+    background: var(--secondary);
+    color: var(--dark);
+    border: none;
+    padding: 0.8rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quick-buttons {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem 1rem;
+    background: var(--primary);
+    border-radius: 0 0 13px 13px;
+}
+
+.quick-btn {
+    flex: 1;
+    padding: 0.5rem;
+    background: rgba(201, 169, 110, 0.2);
+    color: var(--light);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.quick-btn:hover {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .functional-chat-widget .chat-box {
+        width: 300px;
+        height: 400px;
+        right: -10px;
+    }
+    
+    .chat-box {
+        width: 280px;
+        height: 350px;
+    }
+    
+    .price-calculator {
+        padding: 1rem;
+    }
+    
+    .slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>Contact - Lifestyle- BARBERSHOP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Lifestyle Barbershop in Protea Glen. Book appointments, get directions, and reach us at 082 464 2178. Open Mon-Sat 9AM-7PM.">
+    <meta name="keywords" content="contact barbershop, book appointment, Protea Glen barber, 082 464 2178, Shiplake Road">
+    <meta name="author" content="Lifestyle Barbershop">
+    <meta property="og:title" content="Contact Lifestyle Barbershop - Book Your Appointment">
+    <meta property="og:description" content="Get in touch with Lifestyle Barbershop. Professional grooming services in Protea Glen.">
+    <title>Contact - Lifestyle Barbershop | Book Appointment Protea Glen</title>
     <link rel="stylesheet" href="css/contact.css">
-
+    <link rel="canonical" href="https://lifestylebarbershop.com/contact.html">
 </head>
 <body>
    <header>
@@ -20,6 +26,7 @@
                <a href="about.html">About</a>
                <a href="gallery.html">Gallery</a>
                <a href="contact.html">Contact</a>
+               <a href="enquiry.html">Enquiry</a>
             </h1> 
           </center>
       </nav>
@@ -75,6 +82,10 @@
                         <input type="tel" id="phone" required>
                     </div>
                     <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
                         <label for="service">Service Required</label>
                         <select id="service">
                             <option value="haircut">Haircut</option>
@@ -95,7 +106,16 @@
         <div class="map-section">
             <h2>Find Us</h2>
             <div class="map-container">
-                <p>📍 196 Shiplake Road, Protea Glen | Open Mon-Sat 9AM-7PM</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.8!2d27.9!3d-26.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDEyJzAwLjAiUyAyN8KwNTQnMDAuMCJF!5e0!3m2!1sen!2sza!4v1234567890!5m2!1sen!2sza" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p class="map-info">📍 196 Shiplake Road, Protea Glen | Open Mon-Sat 9AM-7PM</p>
             </div>
         </div>
    </main>
@@ -103,5 +123,12 @@
    <footer>
         <p>&copy; 2023 Lifestyle Barbershop. All rights reserved. | ST10483413</p>
    </footer>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/interactive.js"></script>
+    <script src="JavaScript/chatbot.js"></script>
+    <script src="JavaScript/booking.js"></script>
+    <link rel="stylesheet" href="css/interactive.css">
 </body>
 </html>

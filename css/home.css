@@ -156,33 +156,472 @@ nav {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Video Section */
+/* Video Section - Enhanced Storytelling */
 .video-section {
     padding: 5rem 2rem;
-    background-color: var(--transition);
+    background: linear-gradient(180deg, var(--dark) 0%, #0a0a0a 100%);
     text-align: center;
 }
 
-.video-section h2 {
-    color: var(--blue);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.transformation-intro {
+    margin-bottom: 3rem;
+    animation: fadeInDown 1s ease;
 }
 
+.video-section h2 {
+    color: var(--secondary);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-subtitle {
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Main Video Container */
 .video-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto 4rem;
     position: relative;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     border: 5px solid var(--secondary);
     border-radius: 15px;
     overflow: hidden;
+    transition: var(--transition);
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px rgba(201, 169, 110, 0.3);
 }
 
 .video-container video {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Video Labels */
+.video-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 4px solid #ff4444;
+    animation: slideInLeft 0.8s ease;
+}
+
+.video-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    color: var(--dark);
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+/* Video Callouts */
+.video-callouts {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.callout {
+    background: rgba(201, 169, 110, 0.95);
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    animation: fadeInUp 1s ease;
+}
+
+/* Process Showcase */
+.process-showcase {
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.process-showcase h3 {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.process-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.process-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(201, 169, 110, 0.4);
+}
+
+.process-item:hover .process-video,
+.process-item:hover .process-image {
+    transform: scale(1.1);
+}
+
+.process-item:hover .process-video {
+    animation: none;
+}
+
+.process-video,
+.process-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.process-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 2rem 1.5rem 1.5rem;
+    color: var(--light);
+}
+
+.process-overlay h4 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.process-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Results Metrics */
+.results-metrics {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.metric-icon {
+    font-size: 2.5rem;
+}
+
+.metric-value {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.metric-label {
+    color: var(--light);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/* Video CTA */
+.video-cta {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(201, 169, 110, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 3rem auto 0;
+}
+
+.video-cta p {
+    color: var(--light);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.video-cta-btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: var(--transition);
+    border: 2px solid var(--secondary);
+}
+
+.video-cta-btn:hover {
+    background-color: transparent;
+    color: var(--secondary);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(201, 169, 110, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    padding: 5rem 2rem;
+    background-color: var(--light);
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    color: var(--dark);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--dark);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Statistics Section */
+.stats-section {
+    padding: 4rem 2rem;
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-item h3 {
+    color: var(--dark);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.stat-item p {
+    color: var(--dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Testimonials */
+.testimonials-section {
+    padding: 5rem 2rem;
+    background-color: var(--dark);
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--secondary);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.stars {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    color: var(--light);
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.testimonial-card h4 {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button-secondary {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: var(--transition);
+    border: 2px solid var(--secondary);
+    font-size: 1.1rem;
+}
+
+.cta-button-secondary:hover {
+    background-color: transparent;
+    color: var(--secondary);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(201, 169, 110, 0.3);
 }
 
 /* Info Section */
@@ -221,6 +660,56 @@ footer p {
     
     .hero h2 {
         font-size: 1.2rem;
+    }
+    
+    .video-section h2,
+    .why-choose-us h2,
+    .testimonials-section h2,
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+    
+    .process-showcase h3 {
+        font-size: 1.5rem;
+    }
+    
+    .features-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-metrics {
+        gap: 2rem;
+    }
+    
+    .video-badge {
+        top: 10px;
+        right: 10px;
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .video-label {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .video-callouts {
+        bottom: 10px;
+        gap: 0.5rem;
+    }
+    
+    .callout {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
     }
     
     .nav-links {

@@ -305,14 +305,30 @@ main p {
 }
 
 .map-container {
-    height: 300px;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    filter: grayscale(20%) contrast(1.1);
+    transition: var(--transition);
+}
+
+.map-container iframe:hover {
+    filter: grayscale(0%) contrast(1.2);
+}
+
+.map-info {
     color: var(--light);
     font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(201, 169, 110, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary);
 }
 
 /* Footer */

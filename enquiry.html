@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about Lifestyle Barbershop services, pricing, and availability. Get instant quotes for haircuts, beard grooming, and styling services.">
+    <meta name="keywords" content="barbershop enquiry, service pricing, haircut cost, availability, booking enquiry">
+    <meta name="author" content="Lifestyle Barbershop">
+    <title>Service Enquiry - Lifestyle Barbershop | Get Quote</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="canonical" href="https://lifestylebarbershop.com/enquiry.html">
+</head>
+<body>
+   <header>
+      <nav>
+          <div>
+             <img src="images/logo.png" alt="Lifestyle Barbershop Logo" style="width: 50px;height: 60px;">
+             <span class="shop-name">LIFESTYLE-BARBERSHOP</span>
+          </div>
+          <center>
+            <h1>
+               <a href="home.html">Home</a>
+               <a href="services.html">Services</a>
+               <a href="about.html">About</a>
+               <a href="gallery.html">Gallery</a>
+               <a href="contact.html">Contact</a>
+               <a href="enquiry.html">Enquiry</a>
+            </h1> 
+          </center>
+      </nav>
+   </header>
+   
+   <main>
+        <p1>Service Enquiry</p1>
+        <p2>Get instant pricing and availability for our services</p2>
+        <p3>Fill out the form below to receive a detailed quote</p3>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Our Services</h2>
+                <div class="info-item">
+                    <div class="info-text">
+                        <h3>✂️ Classic Haircut</h3>
+                        <p>R150 | 30 minutes</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-text">
+                        <h3>🧔 Beard Trim & Shape</h3>
+                        <p>R80 | 20 minutes</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-text">
+                        <h3>🪒 Straight Razor Shave</h3>
+                        <p>R120 | 25 minutes</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-text">
+                        <h3>💈 Haircut & Beard Combo</h3>
+                        <p>R200 | 45 minutes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Enquiry Form</h2>
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" required minlength="2">
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required pattern="[0-9]{10}">
+                        <span class="error" id="phoneError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" required>
+                            <option value="">Select a service</option>
+                            <option value="haircut" data-price="150" data-time="30">Classic Haircut - R150</option>
+                            <option value="beard" data-price="80" data-time="20">Beard Trim - R80</option>
+                            <option value="shave" data-price="120" data-time="25">Razor Shave - R120</option>
+                            <option value="combo" data-price="200" data-time="45">Combo Deal - R200</option>
+                        </select>
+                        <span class="error" id="serviceError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" required>
+                        <span class="error" id="dateError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Requirements</label>
+                        <textarea id="message" placeholder="Any special requests or questions..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Get Quote</button>
+                </form>
+                
+                <div id="quoteResult" style="display:none; margin-top: 2rem; padding: 1.5rem; background: rgba(201, 169, 110, 0.2); border-radius: 10px; border-left: 4px solid var(--secondary);">
+                    <h3 style="color: var(--secondary); margin-bottom: 1rem;">Your Quote</h3>
+                    <div id="quoteDetails"></div>
+                </div>
+            </div>
+        </div>
+   </main>
+   
+   <footer>
+        <p>&copy; 2024 Lifestyle Barbershop. All rights reserved. | ST10483413</p>
+   </footer>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/interactive.js"></script>
+    <script src="JavaScript/chatbot.js"></script>
+    <script src="JavaScript/enquiry.js"></script>
+    <link rel="stylesheet" href="css/interactive.css">
+</body>
+</html>

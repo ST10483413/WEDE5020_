@@ -1,0 +1,32 @@
+/* Enquiry Page Styles */
+.error {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    min-height: 1.2rem;
+}
+
+.form-group input:invalid:not(:placeholder-shown),
+.form-group select:invalid {
+    border-color: #f44336;
+}
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group select:valid {
+    border-color: #4caf50;
+}
+
+#quoteResult {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
