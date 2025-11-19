@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 A modern, interactive website for Lifestyle Barbershop located in Protea Glen, Soweto. The website features professional grooming services, online booking, interactive elements, and comprehensive SEO optimization.
 
@@ -57,9 +57,9 @@ A modern, interactive website for Lifestyle Barbershop located in Protea Glen, S
 
 ---
 
-## 📁 File Structure
+##  File Structure
 
-## 🔄 CHANGELOG
+##  CHANGELOG
 
 ### Part 3 
 
@@ -176,7 +176,7 @@ A modern, interactive website for Lifestyle Barbershop located in Protea Glen, S
 
 ---
 
-## 📚 References
+##  References
 
 1. **jQuery Documentation** - https://jquery.com/
 2. **EmailJS Documentation** - https://www.emailjs.com/docs/
@@ -201,7 +201,7 @@ Monday - Saturday: 9AM - 7PM
 
 
 
-## 📄 License
+## License
 
 © 2024 Lifestyle Barbershop. All rights reserved.  
 Student Project - ST10483413
